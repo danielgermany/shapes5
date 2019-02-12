@@ -1,10 +1,13 @@
 from graphics import *
 
-bTriWin = GraphWin("Blue Triangle", 300, 300)
-bTriWin.setCoords(0, 0, 300, 300)
+shapesWin = GraphWin("Shapes 5", 300, 300)
+shapesWin.setCoords(0, 0, 600, 600)
 
-bTri = Polygon(Point(100, 100), Point(150,200), Point(200,100))
+bTri = Polygon(Point(10, 10), Point(50,100), Point(100,10))
 bTri.setFill(color_rgb(30,30,230))
-bTri.draw(bTriWin)
-bTriWin.getMouse()
+bTri.draw(shapesWin)
+
+gSquare = Polygon(Point(10,590),Point(100,590),Point(100,500),Point(10,500))
+gSquare.setFill(color_rgb(30,230,30))
+gSquare.draw(shapesWin)
 
